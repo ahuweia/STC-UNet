@@ -5,8 +5,8 @@
 # import numpy as np
 # from matplotlib import pyplot as plt
 #
-# pred = "/home/zhangzifan/MaintoCode/2023-4-17-01/lits/test/pred_unet/"
-# GT = "/home/zhangzifan/MaintoCode/2023-4-17-01/lits/test/labels/"
+# pred = ""
+# GT = ""
 #
 # file_list = os.listdir(pred)
 # pred_list = []
@@ -41,11 +41,11 @@ def dice_coefficient(pred_mask, gt_mask):
     return 2.0 * intersection.sum() / (pred_mask.sum() + gt_mask.sum())
 
 # 加载预测图像和标签
-pred_folder = "/home/zhangzifan/MaintoCode/2023-4-17-01/lits/test/pred_unet/"
+pred_folder = ""
 pred_images = load_images_from_folder(pred_folder)
 
 # 加载真实标签图像
-gt_folder = "/home/zhangzifan/MaintoCode/2023-4-17-01/lits/test/labels/"
+gt_folder = ""
 gt_images = load_images_from_folder(gt_folder)
 
 # 创建一个字典来保存每个类别的Dice指标
