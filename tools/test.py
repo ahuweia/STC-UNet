@@ -24,7 +24,7 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description='mmseg test (and eval) a model')
     parser.add_argument('--work_dirs', default='work_dirs', help='test config file path')
-    parser.add_argument('data_root', help='test config file path')
+    parser.add_argument('data_root', help='test data path')
     parser.add_argument('config', help='test config file path')
     parser.add_argument('checkpoint', help='checkpoint file')
     parser.add_argument(
